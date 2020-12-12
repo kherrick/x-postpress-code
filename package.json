@@ -1,8 +1,8 @@
 {
   "name": "x-postpress-code",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A web component used for code highlighting.",
-  "homepage": "https://github.com/kherrick/x-postpress-code",
+  "homepage": "https://kherrick.github.io/x-postpress-code/",
   "repository": {
     "type": "git",
     "url": "https://github.com/kherrick/x-postpress-code.git"

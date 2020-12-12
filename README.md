@@ -1,4 +1,4 @@
-# x-postpress-code
+# [x-postpress-code](https://kherrick.github.io/x-postpress-code/)
 
 A web component used for code highlighting.
 

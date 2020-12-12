@@ -19,7 +19,8 @@
   </style>
 </head>
 <body>
-  <h1>&lt;x-postpress-code&gt;</h1>
+  <h1>&lt;<a href="https://github.com/kherrick/x-postpress-code">x-postpress-code</a>&gt;</h1>
+  <x-postpress-code type="markdown" src="https://raw.githubusercontent.com/kherrick/x-postpress-code/master/README.md"></x-postpress-code>
   <x-postpress-code type="html"><pre>
 &lt;html&gt;
 &lt;body&gt;
@@ -36,7 +37,6 @@
 &lt;/body&gt;
 &lt;/html&gt;
   </pre></x-postpress-code>
-  <x-postpress-code type="js" src="https://gist.githubusercontent.com/kherrick/8bc01d42bfd81d3d6285859411597586/raw/2560237178dfc64ed9bc76f8becf3abed7bb19d7/simple-promise.js"></x-postpress-code>
   <x-postpress-code type="php"><pre>#!/usr/bin/env php
 &#x3C;?php
 $filename=&#x22;filename&#x22;;
@@ -51,6 +51,7 @@ foreach(file($filename) as $file) {
 for file in *; do
   echo $file
 done</pre></x-postpress-code>
-<script type="module" src="https://kherrick.github.io/x-postpress-code/dist/x-postpress-code.js"></script>
+<x-postpress-code type="js" src="https://gist.githubusercontent.com/kherrick/8bc01d42bfd81d3d6285859411597586/raw/2560237178dfc64ed9bc76f8becf3abed7bb19d7/simple-promise.js"></x-postpress-code>
+<script type="module" src="https://unpkg.com/x-postpress-code@1.0.0/dist/x-postpress-code.js"></script>
 </body>
 </html>

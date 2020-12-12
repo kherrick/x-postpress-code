@@ -1,7 +1,12 @@
 {
   "name": "x-postpress-code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A web component used for code highlighting.",
+  "homepage": "https://github.com/kherrick/x-postpress-code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kherrick/x-postpress-code.git"
+  },
   "browser": "dist/x-postpress-code.js",
   "files": ["dist"],
   "scripts": {
@@ -24,5 +29,10 @@
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "keywords": [
+    "Web Component",
+    "Custom Element",
+    "code highlight"
+  ]
 }

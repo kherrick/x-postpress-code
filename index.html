@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>x-postpress-code</title>
+  <style>
+    html, body {
+      margin: 1rem;
+      padding: 0;
+    }
+    x-postpress-code:not(:first-child) {
+      margin: 0.75rem 0;
+    }
+    x-postpress-code {
+      display: block;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <h1>&lt;x-postpress-code&gt;</h1>
+  <x-postpress-code type="html"><pre>
+&lt;html&gt;
+&lt;body&gt;
+  &lt;x-php&gt;
+    &lt;script type=&quot;text/php&quot;&gt;
+      &lt;?php
+        $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(&apos;.&apos;));
+
+        foreach ($it as $name =&gt; $entry) {
+          echo &quot;$name &lt;br/&gt;&quot;;
+        }
+    &lt;/script&gt;
+  &lt;/x-php&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre></x-postpress-code>
+  <x-postpress-code type="js" src="https://gist.githubusercontent.com/kherrick/8bc01d42bfd81d3d6285859411597586/raw/2560237178dfc64ed9bc76f8becf3abed7bb19d7/simple-promise.js"></x-postpress-code>
+  <x-postpress-code type="php"><pre>#!/usr/bin/env php
+&#x3C;?php
+$filename=&#x22;filename&#x22;;
+$search=&#x22;foo&#x22;;
+
+foreach(file($filename) as $file) {
+  if(strpos($file, $search) !== false) {
+    echo $file;
+  }
+}</pre></x-postpress-code>
+<x-postpress-code type="bash"><pre>#/usr/bin/env bash
+for file in *; do
+  echo $file
+done</pre></x-postpress-code>
+<script type="module" src="https://kherrick.github.io/x-postpress-code/dist/x-postpress-code.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
   "name": "x-postpress-code",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A web component used for code highlighting.",
   "homepage": "https://kherrick.github.io/x-postpress-code/",
   "repository": {
@@ -11,7 +11,7 @@
   "files": ["dist"],
   "scripts": {
     "build": "webpack --env prod --config ./webpack.config.cjs --progress",
-    "start": "webpack serve --env dev --config ./webpack.config.cjs --mode development --host 0.0.0.0 --port 8088",
+    "start": "webpack serve --env dev --config ./webpack.config.cjs --mode development --host 0.0.0.0 --port 8088 --open firefox",
     "prepublishOnly": "npm run build"
   },
   "author": "x-postpress-code",

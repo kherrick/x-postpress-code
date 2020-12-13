@@ -15,7 +15,7 @@ done
 </pre></x-postpress-code>
 ```
 
-Lazy load the code to be highlighted by using both the type and src attributes:
+Lazy load the content to be highlighted by using both the type and src attributes:
 
 ```html
 <x-postpress-code

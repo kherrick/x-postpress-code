@@ -6,7 +6,7 @@
   <title>x-postpress-code</title>
   <style>
     html, body {
-      margin: 1rem;
+      margin: 0;
       padding: 0;
     }
     x-postpress-code:not(:first-child) {
@@ -16,12 +16,43 @@
       display: block;
       white-space: pre;
     }
+    header {
+      display: flex;
+    }
+    header > h1 {
+      flex: 1;
+      text-align: center;
+    }
+    header > a {
+       text-align: right;
+    }
+    main {
+      margin: 2rem;
+    }
   </style>
 </head>
 <body>
-  <h1>&lt;<a href="https://github.com/kherrick/x-postpress-code">x-postpress-code</a>&gt;</h1>
-  <x-postpress-code type="markdown" src="https://raw.githubusercontent.com/kherrick/x-postpress-code/master/README.md"></x-postpress-code>
-  <x-postpress-code type="html"><pre>
+  <header>
+    <h1>&lt;<a href="https://github.com/kherrick/x-postpress-code">x-postpress-code</a>&gt;</h1>
+    <a href="https://github.com/kherrick/x-postpress-code/">
+      <img
+        alt="Fork me on GitHub"
+        class="attachment-full size-full"
+        data-recalc-dims="1"
+        height="100"
+        loading="lazy"
+        src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=100%2C100"
+        width="100"
+      >
+    </a>
+  </header>
+  <main>
+    <h2><a href="https://raw.githubusercontent.com/kherrick/x-postpress-code/master/README.md">README.md</a></h2>
+    <x-postpress-code type="markdown" src="https://raw.githubusercontent.com/kherrick/x-postpress-code/master/README.md"></x-postpress-code>
+
+    <h2>Examples:</h2>
+    <h3>Static Content:</h3>
+    <x-postpress-code type="html"><pre>
 &lt;html&gt;
 &lt;body&gt;
   &lt;x-php&gt;
@@ -35,9 +66,8 @@
     &lt;/script&gt;
   &lt;/x-php&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-  </pre></x-postpress-code>
-  <x-postpress-code type="php"><pre>#!/usr/bin/env php
+&lt;/html&gt;</pre></x-postpress-code>
+    <x-postpress-code type="php"><pre>#!/usr/bin/env php
 &#x3C;?php
 $filename=&#x22;filename&#x22;;
 $search=&#x22;foo&#x22;;
@@ -47,11 +77,14 @@ foreach(file($filename) as $file) {
     echo $file;
   }
 }</pre></x-postpress-code>
-<x-postpress-code type="bash"><pre>#/usr/bin/env bash
+    <x-postpress-code type="bash"><pre>#/usr/bin/env bash
 for file in *; do
   echo $file
 done</pre></x-postpress-code>
-<x-postpress-code type="js" src="https://gist.githubusercontent.com/kherrick/8bc01d42bfd81d3d6285859411597586/raw/2560237178dfc64ed9bc76f8becf3abed7bb19d7/simple-promise.js"></x-postpress-code>
+
+    <h3>Lazy Loaded Content:</h3>
+    <x-postpress-code type="js" src="https://gist.githubusercontent.com/kherrick/8bc01d42bfd81d3d6285859411597586/raw/2560237178dfc64ed9bc76f8becf3abed7bb19d7/simple-promise.js"></x-postpress-code>
+    </main>
 <script type="module" src="https://unpkg.com/x-postpress-code@1.0.0/dist/x-postpress-code.js"></script>
 </body>
 </html>

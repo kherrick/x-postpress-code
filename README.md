@@ -1,6 +1,6 @@
 # [x-postpress-code](https://kherrick.github.io/x-postpress-code/)
 
-A web component used for code highlighting. [Try it out at JS BIN](j.mp/2JZUTAP).
+A web component used for code highlighting. [Try it out at JS BIN](https://j.mp/2JZUTAP).
 
 ## Usage
 

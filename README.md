@@ -1,6 +1,6 @@
 # [x-postpress-code](https://kherrick.github.io/x-postpress-code/)
 
-A web component used for code highlighting.
+A web component used for code highlighting. <a href="j.mp/2JZUTAP">Try out it out at JS BIN</a>.
 
 ## Usage
 
@@ -24,7 +24,6 @@ Lazy load the content to be highlighted by using both the type and src attribute
 ></x-postpress-code>
 ```
 
-
 ## Installation
 
 ### from unpkg:
@@ -45,7 +44,7 @@ npm i x-postpress-code
 import 'x-postpress-code'
 ```
 
-## Using the following highlight.js languages:
+## Uses the following [highlight.js languages](https://github.com/highlightjs/highlight.js/tree/master/src/languages):
 
 * `bash`
 * `c`

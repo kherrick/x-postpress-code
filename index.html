@@ -81,7 +81,23 @@ foreach(file($filename) as $file) {
 for file in *; do
   echo $file
 done</pre></x-postpress-code>
+<x-postpress-code type="c#"><pre>using System;
 
+namespace Application
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Enter username:");
+
+      string userName = Console.ReadLine();
+
+      Console.WriteLine("Username is: " + userName);
+    }
+  }
+}
+</pre></x-postpress-code>
     <h3>Lazy Loaded Content:</h3>
     <x-postpress-code type="js" src="https://gist.githubusercontent.com/kherrick/8bc01d42bfd81d3d6285859411597586/raw/2560237178dfc64ed9bc76f8becf3abed7bb19d7/simple-promise.js"></x-postpress-code>
     </main>

@@ -35,16 +35,17 @@ Lazy load the content to be highlighted by using both the type and src attribute
 ></script>
 ```
 
-### from npm:
+### from npm
 
 ```bash
 npm i x-postpress-code
 ```
+
 ```js
 import 'x-postpress-code'
 ```
 
-## Uses the following [highlight.js languages](https://github.com/highlightjs/highlight.js/tree/master/src/languages):
+## Uses the following [highlight.js languages](https://github.com/highlightjs/highlight.js/tree/master/src/languages)
 
 * `bash`
 * `c`

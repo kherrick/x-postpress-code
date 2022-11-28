@@ -49,6 +49,7 @@ import 'x-postpress-code'
 
 * `bash`
 * `c`
+* `csharp`
 * `cpp`
 * `css`
 * `javascript`
